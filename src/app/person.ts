@@ -1,13 +1,24 @@
-export class Person {
+export class Person { //* create person class
 
-  id: number;
-  firstName: string;
-  lastName: string;
-  dateOfBirth: Date;
+    /* init person properties */
+    id: number;
+    firstName: string;
+    lastName: string;
+    dateOfBirth: Date;
 
-  //add method getAge
-  /*getAge() {
-    today: Date = new Date();
-    return today.getFullYear() - dateOfBirth.getFullYear();
-  }*/
+    
+/*     getAge(): number { 
+
+        let today: Date = new Date();
+        let age = today.getFullYear() - this.dateOfBirth.getFullYear(); 
+
+        if(
+            this.dateOfBirth.getDate() > today.getDate() && 
+            this.dateOfBirth.getMonth() > today.getMonth() 
+        ) {
+            age--;
+        }
+        return age;
+    } */
+    
 }

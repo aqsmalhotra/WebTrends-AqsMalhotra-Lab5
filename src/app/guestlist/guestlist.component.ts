@@ -12,7 +12,7 @@ export class GuestlistComponent implements OnInit {
 
   searchGuest: Person = new Person();
 
-  guests: Person[] = [];
+  guests: Person[] = []; 
 
   findPeople(queryPerson?: Person) {
 
